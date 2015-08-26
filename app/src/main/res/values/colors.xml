@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- https://coolors.co/app/1c85ff-086788-f0c808-fff1d0-dd1c1a -->
+
+    <color name="aq_blue">#1C85FF</color>
+    <color name="aq_dark_blue">#086788</color>
+    <color name="aq_yellow">#F0C808</color>
+    <color name="aq_white">#FFF1D0</color>
+    <color name="aq_red">#DD1C1A</color>
+
+</resources>

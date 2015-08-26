@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">AgileQuotes</string>
+    <string name="hello_world">Bonjour monde</string>
+    <string name="action_settings">Parametres</string>
+
+    <string name="button_favorite_text">Favorisez</string>
+    <string name="button_share_text">Partager</string>
+
+</resources>

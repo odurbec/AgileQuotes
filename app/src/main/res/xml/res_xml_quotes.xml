@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+    version=1.0
+    <quote
+        id=""
+        content=""
+        author=""
+        source=""
+        link="" />
+-->
+
+<quotes version="1.0">
+    <quote
+        id="1"
+        content="Value comes from a balance between chaos and discipline."
+        author="Nicolas Gouy"
+        source=" in &quot;Agile with Guts&quot;"
+        link="http://www.infoq.com/minibooks/agile-guts" />
+
+    <quote
+        id="2"
+        content="The second condition for effective problem solving is that all members focus on the same step of the process at the same time."
+        author="Roger Schwarz"
+        source=" in &quot;The Skilled Facilitator&quot;"
+        link="http://www.amazon.com/The-Skilled-Facilitator-Comprehensive-Facilitators/dp/0787947237/" />
+
+    <quote
+        id="3"
+        content="In a truly self-organizing system, the operative rule is that everything is subject to review all the time, in real time."
+        author="Daniel Mezick"
+        source=" in &quot;Self-Management is Authority-Distribution-By-Consent&quot;"
+        link="http://newtechusa.net/agile/self-management-is-authority-distribution-by-consent/" />
+
+    <quote
+        id="4"
+        content="Weeks of programming can save you hours of planning."
+        author="Anonymous"
+        source=""
+        link="" />
+
+</quotes>
