@@ -7,7 +7,10 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
 
+import com.crashlytics.android.Crashlytics;
+import io.fabric.sdk.android.Fabric;
 import org.xmlpull.v1.XmlPullParser;
 
 import java.util.ArrayList;
@@ -18,20 +21,42 @@ import java.util.logging.Logger;
 
 public class MainActivity extends ActionBarActivity {
     private static final String TAG = "MainActivity";
-    private static HashMap mQuoteList;
+    private static HashMap<Integer, Quote> mQuoteList;
+
+    TextView textQuote;
+    TextView textAuthor;
+    TextView textSource;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        // Crashlytics
+        Fabric.with(this, new Crashlytics());
+
         setContentView(R.layout.activity_main);
 
         mQuoteList = QuotesResourcesParser.getQuotesResources(this.getResources(), R.xml.res_xml_quotes);
+
+        textQuote = (TextView) findViewById(R.id.quote);
+        textAuthor = (TextView) findViewById(R.id.author);
+        textSource = (TextView) findViewById(R.id.source);
+
+
+        Quote quote = mQuoteList.get(4);
+        textQuote.setText(quote.getQuote());
+        textAuthor.setText(quote.getAuthor());
+        textSource.setText(quote.getSource());
+
+        // Test for Crashlytics
+        //throw new RuntimeException("This is a crash");
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_main, menu);
+
         return true;
     }
 

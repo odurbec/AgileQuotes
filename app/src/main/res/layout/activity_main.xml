@@ -9,8 +9,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="The second condition for effective problem solving is that all members focus on the same step of the process at the same time."
+        android:text=""
         android:textColor="@color/aq_white"
+        android:textIsSelectable="true"
         android:id="@+id/quote"
         android:layout_gravity="center_horizontal" />
 
@@ -18,13 +19,14 @@
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal">
+        android:layout_gravity="center_horizontal"
+        >
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Roger Schwarz"
+            android:text=""
             android:textColor="@color/aq_dark_blue"
             android:id="@+id/author"
             android:layout_gravity="center_horizontal" />
@@ -32,10 +34,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text=" in &quot;The Skilled Facilitator&quot;"
+            android:text=""
             android:textColor="@color/aq_dark_blue"
             android:id="@+id/source"
-            android:layout_gravity="center_horizontal" />
+            android:layout_gravity="center_horizontal"
+            android:clickable="true" />
 
     </LinearLayout>
 

@@ -2,6 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="drbc.olvr.agilequotes" >
 
+    <!-- For analytics purpose -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
@@ -12,10 +16,16 @@
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!--
+            Crashlytics
+        -->
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="049b44f0c973c7e1e6b33f22da9baad8ad8429cb" />
     </application>
 
 </manifest>
